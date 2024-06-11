@@ -15,7 +15,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  *  @author eugenio.silva
  */
 @EnableFeignClients
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages={
+		"one.digitalinnovation.gof.service"})
 public class Application {
 
 	public static void main(String[] args) {
